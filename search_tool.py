@@ -11,7 +11,7 @@ client = TavilyClient(
 def tavily_search(query):
     response = client.search(
         query = query,
-        max_results=15,
+        max_results=5,
         search_depth="advanced"
     )
     
