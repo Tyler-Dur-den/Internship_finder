@@ -6,3 +6,4 @@ langchain-community
 python-dotenv
 langchain-tavily
 pypdf
+langchain-google-genai
