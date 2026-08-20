@@ -4,13 +4,13 @@ from serpapi import GoogleSearch
 
 load_dotenv()
 
-def serpapi_search(domain: str, location: str = "Bangalore"):
+def serpapi_search(query: str, location: str = "Bangalore", limit: int = 5):
     params = {
         "engine": "google_jobs",
-        "q": f"{domain} intern",
+        "q": f"{query} intern",
         "location": location,
         "api_key": os.getenv("SERPAPI_API_KEY")
     }
     search = GoogleSearch(params)
-    response = search.get_dict()
-    return response.get("jobs_results", [])
+    results = search.get_dict().get("jobs_results", [])
+    return results[:limit]
