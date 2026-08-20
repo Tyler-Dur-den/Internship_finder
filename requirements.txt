@@ -1,9 +1,10 @@
 langgraph
 langchain
+streamlit
 langchain-core
-langchain-groq
 langchain-community
 python-dotenv
-langchain-tavily
+google-search-results
 pypdf
 langchain-google-genai
+pydantic
