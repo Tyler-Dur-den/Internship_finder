@@ -28,8 +28,6 @@ The workflow is orchestrated using **LangGraph** as a Directed Acyclic Graph (DA
 2. **`skill_gap` (Convergence Node):**
    * Merges extracted candidate skills and job descriptions to perform structured batch comparative analysis via Google Gemini (`gemini-3.6-flash`)
 
----
-
 ## Tech Stack
 
 * **Frontend Framework:** Streamlit
@@ -38,8 +36,6 @@ The workflow is orchestrated using **LangGraph** as a Directed Acyclic Graph (DA
 * **Search Integration:** SerpApi (Google Jobs API)
 * **PDF Engine:** PyPDF
 * **Data Validation:** Pydantic
-
----
 
 ## Challenges and Optimizations
 

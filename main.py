@@ -52,24 +52,21 @@ def resume_analyser(state: InternshipState):
 
 def internship_finder(state: InternshipState):
     domain = state.get('domain', '')
-    #skills = state.get('skills', [])
     location = state.get('location', 'Bangalore')
 
-    #top_skills = " ".join(skills[:3]) if skills else ""
-    #query = f"{domain} {top_skills}".strip()
-    raw_results = serpapi_search(query =domain, location=location, limit=5)
+    raw_results = serpapi_search(query=domain, location=location, limit=5)
 
     parsed_jobs = []
     for item in raw_results:
         parsed_jobs.append({
-            "company_name": item.get("company_name", "N/A"),
+            "company_name": item.get("company", "N/A"),  
             "role_title": item.get("title", "N/A"),
             "location": item.get("location", location),
             "worktype": "N/A",
             "duration": "N/A",
             "stipend_range": "Not mentioned",
-            "website_link": item.get("share_link") or item.get("link") or "",
-            "description": item.get("description", "")
+            "website_link": item.get("apply_link", ""),
+            "description": item.get("description", "No description provided")
         })
 
     return {"internships_found": parsed_jobs}
