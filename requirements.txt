@@ -8,3 +8,6 @@ google-search-results
 pypdf
 langchain-google-genai
 pydantic
+fastapi
+uvicorn
+sqlalchemy
