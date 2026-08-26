@@ -6,7 +6,7 @@ st.set_page_config(page_title="Internship Finder", page_icon="🎯", layout="wid
 st.title("🎯 AI Internship Finder")
 st.caption("API may take 30–60 seconds to wake up on the first request.")
 
-API_URL = os.getenv("FASTAPI_URL", "https://internship-finder-ielk.onrender.com/find-internships")
+API_URL = os.getenv("FASTAPI_URL", "https://internship-finder-f30p.onrender.com/find-internships")
 
 uploaded_file = st.file_uploader("Upload Resume (PDF)", type="pdf")
 domain = st.text_input("Target Role", placeholder="AI Engineer, Data Analyst...")
