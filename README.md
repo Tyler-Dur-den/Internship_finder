@@ -71,7 +71,6 @@ tokens and reducing latency.
 
 3. Create a .env file
    GOOGLE_API_KEY=your_gemini_key
-   GROQ_API_KEY=your_groq_key
    SERPAPI_KEY=your_serpapi_key
 
 4. Run the app
