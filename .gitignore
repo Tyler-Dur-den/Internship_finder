@@ -1,2 +1,5 @@
 .env
 resume.pdf
+searches.db
+__pycache__/
+*.pyc
