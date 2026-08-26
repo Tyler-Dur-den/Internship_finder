@@ -40,7 +40,7 @@ BLOCKED_DOMAINS = [
 TRUSTED_PLATFORMS = [
     "greenhouse.io", "lever.co", "workday.com", "myworkdayjobs.com", 
     "ashbyhq.com", "smartrecruiters.com", "wellfound.com", "angel.co",
-    "internshala.com"  # Legit for Indian internship listings
+    "internshala.com" 
 ]
 
 def _is_blocked(url: str) -> bool:
