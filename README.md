@@ -123,7 +123,7 @@ streamlit run app.py          # frontend
 
 ## Live Demo
 [Frontend](https://internshipfinder-765rs.streamlit.app) — 
-[API Docs](https://internship-finder-ielk.onrender.com/docs)
+[API Docs](https://internship-finder-f30p.onrender.com/docs)
 
 ## Limitations
 - Scanned PDFs are not supported
