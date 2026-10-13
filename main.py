@@ -3,13 +3,14 @@ from typing import TypedDict
 from pydantic import BaseModel, Field
 from pypdf import PdfReader
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_groq import ChatGroq
 from langgraph.graph import StateGraph, START, END
 from search_tool import serpapi_search
 
-llm = ChatGoogleGenerativeAI(
-    model="gemini-3.6-flash",
-    google_api_key=os.getenv("GOOGLE_API_KEY")
-)
+llm = ChatGroq(
+        model_name="qwen/qwen3.8-27b", 
+        temperature=0
+    )
 
 class ResumeSkills(BaseModel):
     skills: list[str] = Field(description="List of key technical skills extracted from resume")
